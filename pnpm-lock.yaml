@@ -43,6 +43,9 @@ devDependencies:
   eslint-plugin-jsx-a11y:
     specifier: ^6.8.0
     version: 6.8.0(eslint@8.56.0)
+  husky:
+    specifier: ^9.0.11
+    version: 9.0.11
   prettier:
     specifier: ^3.2.5
     version: 3.2.5
@@ -5757,6 +5760,15 @@ packages:
         integrity: sha512-AXcZb6vzzrFAUE61HnN4mpLqd/cSIwNQjtNWR0euPm6y0iqx3G4gOXaIDdtdDwZmhwe82LA6+zinmW4UBWVePQ==
       }
     engines: { node: '>=16.17.0' }
+    dev: true
+
+  /husky@9.0.11:
+    resolution:
+      {
+        integrity: sha512-AB6lFlbwwyIqMdHYhwPe+kjOC3Oc5P3nThEoW/AaO2BX3vJDjWPFxYLxokUZOo6RNX20He3AaT8sESs9NJcmEw==
+      }
+    engines: { node: '>=18' }
+    hasBin: true
     dev: true
 
   /iconv-lite@0.4.24:

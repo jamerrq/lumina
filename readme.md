@@ -1,3 +1,3 @@
 # Lumina - PWA Starter Template
 
-Generated from [`astro-pwa-starter`](https://github.com/shaunchander/astro-pwa-starter#-getting-started-guide)
+Generated from [`astro-pwa-starter`](https://github.com/shaunchander/astro-pwa-starter)
