@@ -30,7 +30,8 @@ export interface Props {
 }
 
 // Background image
-import { Background } from '@component/global'
+// import { Background } from '@component/global'
+import Background from '@component/global/Background/Tranquiluxe'
 
 // Font imports
 import '@fontsource/source-sans-pro'
@@ -181,9 +182,10 @@ const {
     </style>
   </head>
   <body
-    class='debug-screens flex min-h-screen w-full flex-col overflow-x-hidden'
+    data-dev={import.meta.env.DEV}
+    class='data-[dev]:debug-screens flex min-h-screen w-full flex-col overflow-x-hidden'
   >
-    <Background />
+    <Background client:idle />
     <div class='flex min-h-screen w-full flex-col'>
       <slot />
     </div>
