@@ -2,6 +2,20 @@
 export default {
   content: ['./src/**/*.{astro,html,jsx,tsx,svelte,vue,js,ts}'],
   theme: {
+    debugScreens: {
+      style: {
+        backgroundColor: 'white',
+        color: 'black',
+        position: 'absolute',
+        borderRadius: '5px',
+        fontFamily: 'monospace',
+        fontSize: '10px',
+        fontWeight: 'bold',
+        margin: '5px'
+        // ...
+      },
+      position: ['bottom', 'right']
+    },
     screens: {
       xs: '320px',
       // => @media (min-width: 320px) { ... }

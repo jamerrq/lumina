@@ -2,6 +2,14 @@
 
 ![alt text](./lib/snaps/preview.png)
 
+### [Live Demo](https://lumina-sigma.vercel.app/)
+
+## Alternate Themes
+
+### Tranquiluxe (UVCanvas, Animated with this [React Library](https://uvcanvas.com/docs/components/tranquiluxe))
+
+![alt text](./lib/snaps/tranquiluxe.png)
+
 ## About
 
 Template for a PWA with Astro and TailwindCSS. Prettier, EsLint and VsCode settings included.
