@@ -12,7 +12,10 @@ import { Layout } from '@globals'
       <h2>Minimalist Astro PWA Starter Template</h2>
     </section>
     <footer class='fixed bottom-0 w-full px-2 py-1 text-right text-sm'>
-      <span class='hidden md:block'>
+      <span
+        data-dev={import.meta.env.DEV}
+        class='data-[dev]:hidden xs:hidden md:block'
+      >
         Highly inspired by: <a
           href='https://github.com/shaunchander/astro-pwa-starter'
           target='_blank'
