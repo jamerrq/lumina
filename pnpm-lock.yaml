@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@fontsource/bungee-shade':
+    specifier: ^5.0.19
+    version: 5.0.19
   '@fontsource/source-sans-pro':
     specifier: ^5.0.8
     version: 5.0.8
@@ -2063,6 +2066,13 @@ packages:
       }
     engines: { node: ^12.22.0 || ^14.17.0 || >=16.0.0 }
     dev: true
+
+  /@fontsource/bungee-shade@5.0.19:
+    resolution:
+      {
+        integrity: sha512-4J5886vssv1DCsvEhFokW4E1BzEeF2RrfzQSMmwn+/w2wUvRGpyQl1t2FI9a/KvzF6QbFOwD9ZxoHHJGSaoNJg==
+      }
+    dev: false
 
   /@fontsource/source-sans-pro@5.0.8:
     resolution:
