@@ -183,9 +183,9 @@ const {
   </head>
   <body
     data-dev={import.meta.env.DEV}
-    class='data-[dev]:debug-screens flex min-h-screen w-full flex-col overflow-x-hidden'
+    class='flex min-h-screen w-full flex-col overflow-x-hidden data-[dev]:debug-screens'
   >
-    <Background client:idle />
+    <Background client:load />
     <div class='flex min-h-screen w-full flex-col'>
       <slot />
     </div>

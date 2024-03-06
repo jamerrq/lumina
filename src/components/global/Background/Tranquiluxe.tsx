@@ -1,9 +1,9 @@
-import { Tranquiluxe } from "uvcanvas"
+import { Tranquiluxe } from 'uvcanvas'
 
 export default function Background() {
-    return (
-        <div className="w-[100dvw] h-[100dvh] -z-10 absolute">
-            <Tranquiluxe />
-        </div>
-    )
+  return (
+    <div className='absolute -z-10 h-[100dvh] w-[100dvw]'>
+      <Tranquiluxe />
+    </div>
+  )
 }
