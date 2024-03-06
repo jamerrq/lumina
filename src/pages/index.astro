@@ -5,29 +5,19 @@ import { Layout } from '@globals'
 
 <Layout title='PWA Starter Template'>
   <main
-    class='mx-2 flex flex-col items-center px-2 py-4 text-center font-mono text-lg font-semibold'
+    class='mx-2 flex h-[100dvh] flex-col items-center justify-center px-10 py-12 text-center text-lg font-semibold text-pink-100'
   >
-    <h1>
-      PWA Starter Template by
-      <a
-        href='https://jamerrq.deno.dev'
-        target='_blank'
-        rel='noopener noreferrer'
-      >
-        @jamerrq
-      </a>
-    </h1>
-    <br />
-    <span>
-      Highly inspired by this template:
-      <a
+    <section>
+      <h1 class='m-2 text-4xl'>LUMINA</h1>
+      <h2>PWA Starter Template</h2>
+    </section>
+    <footer class='fixed bottom-0 w-full py-1 text-sm'>
+      Highly inspired by: <a
         href='https://github.com/shaunchander/astro-pwa-starter'
         target='_blank'
-        rel='noopener noreferrer'
+        rel='noopener'
+        class='underline'>Astro PWA Starter Template</a
       >
-        Astro PWA Starter
-      </a>
-      plus prettier and vscode settings
-    </span>
+    </footer>
   </main>
 </Layout>
