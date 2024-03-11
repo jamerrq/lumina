@@ -1,22 +1,48 @@
 {
+  "extends": "astro/tsconfigs/base",
   "compilerOptions": {
+    "skipLibCheck": true,
     "jsx": "preserve",
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "types": ["astro/client"],
+    "types": [
+      "astro/client"
+    ],
     "baseUrl": ".",
     "paths": {
-      "@globals": ["src/components/global"],
-      "@component/*": ["src/components/*"],
-      "@style/*": ["src/styles/*"],
-      "@util/*": ["utils/*"],
-      "@img/*": ["src/assets/img/*"],
-      "@svg/*": ["src/assets/svg/*"],
-      "@icon/*": ["src/assets/svg/icon/*"],
-      "@data/*": ["src/data/*"]
-    }
-  }
+      "@globals": [
+        "src/components/global"
+      ],
+      "@component/*": [
+        "src/components/*"
+      ],
+      "@style/*": [
+        "src/styles/*"
+      ],
+      "@util/*": [
+        "utils/*"
+      ],
+      "@img/*": [
+        "src/assets/img/*"
+      ],
+      "@svg/*": [
+        "src/assets/svg/*"
+      ],
+      "@icon/*": [
+        "src/assets/svg/icon/*"
+      ],
+      "@data/*": [
+        "src/data/*"
+      ]
+    },
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "public",
+    "src/env.d.ts"
+  ]
 }

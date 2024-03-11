@@ -1,6 +1,6 @@
 ---
 // Component imports
-import { SEO, TwitterCardType } from 'astro-seo'
+import { SEO, type TwitterCardType } from 'astro-seo'
 
 // Style imports
 import '@style/tailwind.css'
@@ -158,8 +158,14 @@ const {
     <meta name='theme-color' content='#2F2F2F' />
 
     <!-- Service worker registration. -->
-    <script is:inline src='/registerSW.js'></script>
-    <link rel='manifest' href='/manifest.webmanifest' />
+    {
+      !import.meta.env.DEV && (
+        <>
+          <script is:inline src='/registerSW.js' />
+          <link rel='manifest' href='/manifest.webmanifest' />
+        </>
+      )
+    }
     <style is:global>
       /* Global styles here */
       *,

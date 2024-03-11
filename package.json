@@ -1,6 +1,6 @@
 {
   "name": "lumina",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "private": false,
   "scripts": {
     "dev": "astro dev",
@@ -8,10 +8,15 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "lint": "eslint --fix --ext .astro,.js,.ts . && prettier --write .",
+    "check": "astro check",
+    "lint": "eslint --ext .astro,.ts,.js,.tsx .",
+    "lint:fix": "eslint --ext .astro,.ts,.js,.tsx . --fix",
+    "format": "prettier --write src",
+    "format:check": "prettier --check src",
     "prepare": "husky"
   },
   "devDependencies": {
+    "@astrojs/check": "^0.5.6",
     "@astrojs/sitemap": "^3.0.5",
     "@astrojs/tailwind": "^5.1.0",
     "@typescript-eslint/eslint-plugin": "^7.0.1",

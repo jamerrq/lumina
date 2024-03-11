@@ -1,7 +1,7 @@
 {
   "prettier.useTabs": false,
   "[astro]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "astro-build.astro-vscode"
   },
   // Disable the default formatter, use eslint instead
   "prettier.documentSelectors": ["**/*.astro"],
@@ -60,13 +60,10 @@
     "javascriptreact",
     "typescript",
     "typescriptreact",
-    "vue",
     "html",
-    "markdown",
     "json",
     "jsonc",
     "yaml",
-    "toml",
     "astro"
   ]
 }
